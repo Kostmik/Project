@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Научно-техническая библиотека РУТ (МИИТ)</title>
+    <style>
+        @font-face {
+            font-family: 'Navigo';
+            src: url('/fonts/Navigo-Regular.woff2') format('woff2'),
+                 url('/fonts/Navigo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Navigo', Arial, sans-serif;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+            color: #002147;
+        }
+        .logo, .library-info {
+            display: flex;
+            align-items: center;
+        }
+        .logo img, .library-info img {
+            height: 60px;
+            margin-right: 10px;
+        }
+        .logo-text, .library-text {
+            font-size: 1.2em;
+        }
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-right: 1px solid #ccc;
+        }
+        .sidebar img {
+            display: block;
+            margin: 0 auto 10px;
+            height: 60px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #002147;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="/images/rut_logo.png" alt="Российский университет транспорта">
+            <div class="logo-text">
+                <p>РОССИЙСКИЙ УНИВЕРСИТЕТ ТРАНСПОРТА<br>РУТ (МИИТ)</p>
+            </div>
+        </div>
+        <div class="library-info">
+            <img src="/images/library_logo.png" alt="Научно-техническая библиотека">
+            <div class="library-text">
+                <p>НАУЧНО-ТЕХНИЧЕСКАЯ БИБЛИОТЕКА РУТ (МИИТ)</p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main-content" style="display: flex;">
+    <aside class="sidebar">
+        <img src="/images/rut_logo.png" alt="Герб России">
+        <h3>НТБ РУТ(МИИТ)</h3>
+        <ul>
+            <li><a href="/about">О библиотеке</a></li>
+            <li><a href="#">Книги</a></li>
+            <li><a href="#">Электронный каталог</a></li>
+            <li><a href="#">Профиль</a></li>
+        </ul>
+    </aside>
+</div>
+</body>
+</html>
